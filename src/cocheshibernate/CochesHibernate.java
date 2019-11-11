@@ -9,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import metodos.Altas;
 import metodos.Creacion;
 import metodos.Menu;
 
@@ -50,7 +51,7 @@ public class CochesHibernate {
             op = Menu.principal(lee);
             switch (op) {
                 case 1:
-                    System.out.println("En construcción");
+                    Altas.main(lee);
                     break;
                 case 2:
                     System.out.println("En construcción");

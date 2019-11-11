@@ -10,7 +10,6 @@ import java.sql.Date;
  */
 public class Uso implements Serializable{
     
-    private String codigo;
     private Date fechaAlquiler;
     private Date fechaEntrega;
     private float importe;
@@ -19,19 +18,10 @@ public class Uso implements Serializable{
     public Uso() {
     }
 
-    public Uso(String codigo, Date fechaAlquiler, Date fechaEntrega, float importe) {
-        this.codigo = codigo;
+    public Uso(Date fechaAlquiler, Date fechaEntrega, float importe) {
         this.fechaAlquiler = fechaAlquiler;
         this.fechaEntrega = fechaEntrega;
         this.importe = importe;
-    }
-
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
     }
 
     public Date getFechaAlquiler() {

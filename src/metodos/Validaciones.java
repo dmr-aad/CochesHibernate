@@ -34,11 +34,11 @@ public class Validaciones {
     public static boolean coche(String cod) {
         boolean a = true;
         try {
-            if (cod.charAt(0) != 'V' || cod.charAt(0) != 'A') {
+            if (cod.charAt(0) != 'V' && cod.charAt(0) != 'A') {
                 a = false;
                 throw new Excepciones("El codigo debe empezar por A o V en función de su finalidad");
             }
-            if (cod.substring(1).matches("[0-9]*")) {
+            if (!cod.substring(1).matches("[0-9]*")) {
                 a = false;
                 throw new Excepciones("El código debe contener una letra seguida de 3 digitos");
             }
