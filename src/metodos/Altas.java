@@ -189,8 +189,6 @@ public class Altas {
             Uso u = new Uso(fechaAlquilerSQL, fechaEntregaSQL, importe);
             //registro el coche en el uso
             u.setCoche(ca);
-            //añado este uso al registro del coche
-            ca.getUsos().add(u);
             //guardo el uso
             guardarModificar(u);
         } else {
