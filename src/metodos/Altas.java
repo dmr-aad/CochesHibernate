@@ -39,7 +39,6 @@ public class Altas {
     public static void empresa(BufferedReader lee) throws IOException {
         String cif, nombre;
         int telefono, op;
-        Coche c;
         do {
             System.out.println("Introduce el cif");
             cif = lee.readLine();
